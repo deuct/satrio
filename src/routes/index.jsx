@@ -2,7 +2,7 @@
 import { Routes, Route } from "react-router-dom";
 
 //import view homepage
-import Home from "../views/home.jsx";
+import Dashboard from "../views/dashboard.jsx";
 
 //import view posts index
 import PostIndex from "../views/posts/index.jsx";
@@ -17,7 +17,7 @@ function RoutesIndex() {
   return (
     <Routes>
       {/* route "/" */}
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<Dashboard />} />
 
       {/* route "/posts" */}
       <Route path="/posts" element={<PostIndex />} />
