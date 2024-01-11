@@ -29,9 +29,11 @@ code {
   display: block;
   position: relative;
   left: 0;
+  top: 0;
   background: white !important;
   height: 100vh;
-  position: sticky;
+  position: -webkit-sticky;
+  position: sticky !important;
 }
 
 .sidebar-content {
@@ -102,8 +104,9 @@ code {
 }
 
 .satrio-table thead tr td {
-  background: rgb(189, 180, 242) !important;
+  background: rgb(145, 193, 244) !important;
   color: #222;
+  text-align: center;
 }
 
 .satrio-table tr td {
