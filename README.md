@@ -12,11 +12,11 @@ This project was done by Farhan Fadil for test interview purpose.
 ## Available feature
 
 ### 1. Dashboard
-![Alt text](https://ibb.co/grKDFx7)
+![Alt text](https://i.ibb.co/8NdDcxB/dashboard.png)
 This feature was for : edit and delete the list AO data from the bottom table
 
 ### 2. Ajukan Pembiayaan
-![Alt text](https://ibb.co/2Ws7NM6)
+![Alt text](https://i.ibb.co/GdSV3qJ/penyaringan.png)
 This feature was for implementing the react-redux for state management. This menu is splitted using nav tabs. User can upload the file using the upload field
 
 ## Thank You
