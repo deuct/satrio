@@ -17,6 +17,6 @@ This feature was for : edit and delete the list AO data from the bottom table
 
 This feature was for implementing the react-redux for state management. This menu is splitted using nav tabs. User can upload the file using the upload field
 
-# Thank You
+## Thank You
 
-# === End Of Section ===
+## === End Of Section ===
