@@ -9,7 +9,7 @@ export default function Sidebar() {
           <div className="sidebar-item">
             <ul>
               <li>
-                <a href="#">
+                <a href="/dashboard">
                   <i class="bi bi-house me-3"></i>Dashboard
                 </a>
               </li>
@@ -19,7 +19,7 @@ export default function Sidebar() {
           <div className="sidebar-item">
             <ul>
               <li>
-                <a href="#">
+                <a href="/pembiayaan">
                   <i class="bi bi-currency-exchange me-3"></i>Ajukan Pembiayaan
                 </a>
               </li>

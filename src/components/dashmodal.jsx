@@ -5,7 +5,7 @@ export default function DashModal({ data }) {
         class="modal fade"
         id="editmodal"
         data-bs-backdrop="static"
-        // data-bs-keyboard="false"
+        data-bs-keyboard="false"
         tabindex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"

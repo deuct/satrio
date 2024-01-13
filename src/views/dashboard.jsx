@@ -1,16 +1,16 @@
-// import { useState, useEffect } from "react";
 import React from "react";
 import { useEffect, useState } from "react";
 import DashModal from "../components/dashmodal";
 import { useSelector, useDispatch } from "react-redux";
 import { removeData } from "../features/sliceAo";
+import Usertop from "../components/usertop";
 
 export default function Dashboard() {
+  const dispatch = useDispatch();
   const [selectedAO, setSelectedAO] = useState([]);
   const [arrAO, setArrAO] = useState(
     useSelector((state) => state.sliceAo.value)
   );
-  const dispatch = useDispatch();
 
   useEffect(() => {
     console.log(selectedAO);
@@ -25,14 +25,7 @@ export default function Dashboard() {
 
   return (
     <>
-      <div className="user-top d-block shadow p-3 mb-3 bg-body-tertiary rounded">
-        <div className="d-flex justify-content-between">
-          <div className="text-start">Wed, 11 July 2022, 19:00:00</div>
-          <div className="text-end">
-            <i class="bi bi-person-fill me-1"></i> Muhammad Satrio Pamungkas
-          </div>
-        </div>
-      </div>
+      <Usertop />
 
       <div className="row mb-2">
         <div className="col-lg-8 col-md-8 col-sm-12">
@@ -46,7 +39,7 @@ export default function Dashboard() {
                   You have 10 works todo! Check your tickets in your profile.
                   Keep up the good work!
                 </span>
-                <button class="btn btn-outline-success btn-sm">
+                <button className="btn btn-outline-success btn-sm">
                   View Tickets
                 </button>
               </div>
@@ -65,22 +58,22 @@ export default function Dashboard() {
           <div className="d-flex justify-content-between h-100">
             <div className="d-inline-block w-50 h-100 shadow py-4 px-3 mx-1 mb-3 bg-body-tertiary rounded">
               <div className="d-block text-success fs-3 fw-bold">
-                <i class="bi bi-credit-card"></i>
+                <i className="bi bi-credit-card"></i>
               </div>
               <span className="fs-6 d-block">UMKM Loans</span>
               <span className="d-block fs-5">Rp. 123.456.789</span>
               <span className="fs-5 text-success">
-                <i class="bi bi-arrow-up"></i> +72.80%
+                <i className="bi bi-arrow-up"></i> +72.80%
               </span>
             </div>
             <div className="d-inline-block w-50 h-100 shadow py-4 px-3 mx-1 mb-3 bg-body-tertiary rounded">
               <div className="d-block text-warning fs-3 fw-bold">
-                <i class="bi bi-credit-card"></i>
+                <i className="bi bi-credit-card"></i>
               </div>
               <span className="fs-6 d-block">KPR Loans</span>
               <span className="d-block fs-5">Rp. 123.456.789</span>
               <span className="fs-5 text-success">
-                <i class="bi bi-arrow-up"></i> +72.80%
+                <i className="bi bi-arrow-up"></i> +72.80%
               </span>
             </div>
           </div>
@@ -120,7 +113,7 @@ export default function Dashboard() {
               </div>
               <div className="ao-ter w-25 text-center">
                 <span>AO Terbaik</span>
-                <i class="bi bi-person-fill fs-1"></i>
+                <i className="bi bi-person-fill fs-1"></i>
                 <span className="fs-6">Muhammad Satrio Pamungkas</span>
                 <span className="fs-6">Total 10 Pengajuan</span>
               </div>
@@ -131,22 +124,22 @@ export default function Dashboard() {
           <div className="d-flex justify-content-between h-100">
             <div className="d-inline-block w-50 h-100 shadow py-4 px-3 mx-1 mb-3 bg-body-tertiary rounded">
               <div className="d-block text-success fs-3 fw-bold">
-                <i class="bi bi-credit-card"></i>
+                <i className="bi bi-credit-card"></i>
               </div>
               <span className="fs-6 d-block">UMKM Loans</span>
               <span className="d-block fs-5">Rp. 123.456.789</span>
               <span className="fs-5 text-danger">
-                <i class="bi bi-arrow-down"></i> -14.80%
+                <i className="bi bi-arrow-down"></i> -14.80%
               </span>
             </div>
             <div className="d-inline-block w-50 h-100 shadow py-4 px-3 mx-1 mb-3 bg-body-tertiary rounded">
               <div className="d-block text-warning fs-3 fw-bold">
-                <i class="bi bi-credit-card"></i>
+                <i className="bi bi-credit-card"></i>
               </div>
               <span className="fs-6 d-block">KPR Loans</span>
               <span className="d-block fs-5">Rp. 123.456.789</span>
               <span className="fs-5 text-success">
-                <i class="bi bi-arrow-up"></i> +72.80%
+                <i className="bi bi-arrow-up"></i> +72.80%
               </span>
             </div>
           </div>
@@ -276,7 +269,7 @@ export default function Dashboard() {
       </div>
 
       <div
-        class="modal fade"
+        className="modal fade"
         id="deletemodal"
         data-bs-backdrop="static"
         // data-bs-keyboard="false"
@@ -284,34 +277,34 @@ export default function Dashboard() {
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">
+        <div className="modal-dialog modal-lg">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h1 className="modal-title fs-5" id="exampleModalLabel">
                 Edit Row
               </h1>
               <button
                 type="button"
-                class="btn-close"
+                className="btn-close"
                 data-bs-dismiss="modal"
                 aria-label="Close"
               ></button>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
               Apakah anda yakin ingin menghapus data ini ?
               <br /> Nama AO : {selectedAO.ao}
             </div>
-            <div class="modal-footer">
+            <div className="modal-footer">
               <button
                 type="button"
-                class="btn btn-secondary"
+                className="btn btn-secondary"
                 data-bs-dismiss="modal"
               >
                 Cancel
               </button>
               <button
                 type="button"
-                class="btn btn-success"
+                className="btn btn-success"
                 data-bs-dismiss="modal"
                 onClick={() => deleteData()}
               >

@@ -112,3 +112,15 @@ code {
 .satrio-table tr td {
   background: none !important;
 }
+
+.nav-link {
+  background: #d0d0d0 !important;
+  margin: 5px 5px !important;
+  color: #222 !important;
+  font-weight: 500;
+}
+
+.nav-link.active {
+  background: rgb(12, 82, 202) !important;
+  color: white !important;
+}

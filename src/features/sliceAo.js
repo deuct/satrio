@@ -54,11 +54,14 @@ export const counterSlice = createSlice({
       //   state.value += 1;
       state.value = action.payload;
     },
-    decrement: (state, action) => {
-      state.value -= 1;
-    },
-    incrementByAmount: (state, action) => {
-      state.value += action.payload;
+    // decrement: (state, action) => {
+    //   state.value -= 1;
+    // },
+    // incrementByAmount: (state, action) => {
+    //   state.value += action.payload;
+    // },
+    saveData: (state, action) => {
+      console.log(action);
     },
   },
 });
